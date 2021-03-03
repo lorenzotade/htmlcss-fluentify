@@ -14,6 +14,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+}
+
 .w-50 {
   width: 50%;
 }
@@ -21,12 +27,9 @@ body {
 /* HEADER */
 header {
   height: 550px;
-  background-color: #0c325a;
+  background-color: #0C325A;
 }
 .header-container {
-  width: 100%;
-  height: 100%;
-  padding: 0 10%;
   min-width: 1400px;
   background-image: url(../img/background-header.png);
   background-size: 1000px;
@@ -72,7 +75,7 @@ header {
 }
 
 .menu-inline li a {
-  color: white;
+  color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 80%;
@@ -81,7 +84,7 @@ header {
 /* BUTTONS */
 .btn {
   display: inline-block;
-  color: white;
+  color: #FFFFFF;
   border-radius: 5px;
   line-height: 20px;
   padding: 5px 10px;
@@ -92,11 +95,11 @@ header {
 .btn.btn-blue {
   padding-left: 30px;  
   padding-right: 30px;  
-  border:1px solid white;
+  border:1px solid #FFFFFF;
 }
 
 .btn.btn-green {
-  background-color: #7cbb04;
+  background-color: #7CBB04;
 }
 
 .btn.btn-large {
@@ -117,7 +120,63 @@ header {
 }
 
 .jumbotron-text h1 {
-  color: white;
+  color: #FFFFFF;
   font-size: 350%;
   margin-bottom: 30px;
+}
+
+/* SPOT */
+.spot-container {
+  position: relative;
+  height: 140px;
+  background-color: #D3D3D3;
+  text-align: center;
+}
+
+.spot-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spot-text h2 {
+  margin-bottom: 10px;
+}
+
+.spot-text p {
+  color: #808080;
+}
+
+/* DESCRIPTION */
+.description {
+  height: 100%;
+  width: calc(100% / 3);
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.description img {
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.description h2 {
+  color: #7CBB04;
+  /* margin-bottom: 40px; */
+  line-height: 130%;
+}
+
+.description .border {
+  display: inline-block;
+  height: 30px;
+  width: 80px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #808080;
+}
+
+.description p {
+  color: #808080;
+  line-height: 150%;
 }
