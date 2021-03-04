@@ -18,6 +18,12 @@ body {
 .spot-container,
 .description-container,
 .level-container,
+.structure-container,
+.discover-container,
+.find-container,
+.business-container,
+.plan-container,
+.faq-container,
 .footer-container {
   width: 100%;
   height: 100%;
@@ -176,6 +182,7 @@ header {
   background-color: #D3D3D3;
   width: 95%;
 }
+
 .description {
   height: 100%;
   width: calc(100% / 3);
@@ -215,18 +222,21 @@ header {
 }
 
 /* LEVEL */
-.level-img, .level-text {
+.level-img, .level-text,
+.discover-img, .discover-text {
   min-width: 50%;
   margin: 30px 0;
   padding: 0 50px;
 }
 
-.level-text h2 {
+.level-text h2,
+.discover-text h2 {
   font-size: 1.75em;
   margin-bottom: 10px;
 }
 
-.level-text p {
+.level-text p,
+.discover-text p {
   margin-bottom: 10px;
 }
 
@@ -235,45 +245,244 @@ header {
 }
 
 /* FOOTER */
-footer {
+section .structure-container {
   height: 150px;
+  line-height: 150px;
   background-color: #D3D3D3;
 }
 
-footer .footer-container {
-  line-height: 150px;
-}
-
-.footer-left {
+.structure-left {
   font-size: 1.1em;
 }
 
-.footer-right {
+.structure-right {
   float: right;
   text-align: right;
   color: #808080;
 }
 
-.footer-right span, 
-.footer-right .selection,
-.footer-right a {
+.structure-right span, 
+.structure-right .selection,
+.structure-right a {
   height: 100%;
   display: inline-block;
   margin-left: 30px;
 }
 
-.footer-right .selection {
+.structure-right .selection {
   line-height: 20px;
   border-bottom: 1px solid #808080;
 }
 
-.footer-right .selection::after {
+.structure-right .selection::after {
   padding-left: 80px;
   content: '\25BE';
 }
 
+/* DISCOVER */
+.discover-container {
+  position: relative;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.discover-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: #D3D3D3;
+  width: 95%;
+}
+
+.discover-text .button-box {
+  margin-top: 40px;
+}
+
+.discover-text .button-box p {
+  text-align: center;
+  color: #A6B8C7;
+  line-height: 160%;
+}
+
+/* FIND */
+.find-container {
+  position: relative;
+  height: 550px;
+}
+
+.find-container .find {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+}
+
+.find-container .find h2 {
+  margin: 20px 0;
+}
+
+.find-container .find span {
+  color: #7CBB04;
+}
+
+.find-container .find p.small {
+  font-size: 80%;
+}
+
+.find-container .find p {
+  margin: 20px 0;
+}
+
+.find-container .find a {
+  color: #A6B8C7;
+}
+
+/* BUSINESS */
+.business-container {
+  position: relative;
+  height: 350px;
+  background-color: #0C325A;
+}
+
+.business-container .business-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+}
+
+.business-container .business-text h2 {
+  color: #FFFFFF;
+}
+
+.business-container .business-text p {
+  margin: 30px 0;
+}
+
+/* PLAN */
+.plan-container {
+  height: 450px;
+}
+
+.plan-container h2.title {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.plan-container .plan {
+  width: calc(100% / 3 - 60px);
+  min-height: 250px;
+  position: relative;
+  margin: 0 10px;
+}
+
+.plan-container .plan img {
+  width: 50px;
+  margin-bottom: 40px;
+}
+
+.plan-container .plan h2 {
+  font-size: 100%;
+  margin-bottom: 20px;
+}
+
+.plan-container .plan p {
+  line-height: 140%;
+}
+
+.plan-container .plan::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.plan-container .plan.student::after {
+  background-color: #95C9F6;
+}
+
+.plan-container .plan.worker::after {
+  background-color: #FBA500;
+}
+
+.plan-container .plan.business::after {
+  background-color: #80B805;
+}
+
+/* FAQ */
+.faq-container {
+  position: relative;
+  height: 150px;
+  background-color: #0C325A;
+}
+
+.faq-container .faq-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.faq-container .faq-text h2 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.faq-container .faq-text h2 span {
+  color: #FBA500;
+}
+
+/* FOOTER */
+footer {
+  height: 320px;
+  background-color: #16416B;
+}
+
+footer .footer-container {
+  height: 100%;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+footer ul h4 {
+  margin-bottom: 15px;
+}
+
+footer h4 {
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+footer li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+footer li a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 80%;
+}
+
+footer .footer-credits {
+  text-align: right;
+}
+
+.footer-credits .firm {
+  text-transform: uppercase;
+}
+
 /* HELP */
 footer .help {
+  z-index: 999;
   position: fixed;
   bottom: 0;
   right: 200px;
