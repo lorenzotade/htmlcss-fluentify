@@ -146,6 +146,13 @@ header {
 
 .spot-text h2 {
   margin-bottom: 10px;
+  height: 50%;
+  vertical-align: bottom;
+}
+
+.spot-text p {
+  height: 50%;
+  vertical-align: top;
 }
 
 /* DESCRIPTION */
@@ -165,6 +172,7 @@ header {
 .description h2 {
   color: #7CBB04;
   line-height: 130%;
+  font-size: 120%;
 }
 
 .description .border {
@@ -208,15 +216,19 @@ main .hr {
 /* FOOTER */
 footer {
   height: 150px;
-  line-height: 150px;
   background-color: #D3D3D3;
 }
 
+footer .footer-container {
+  line-height: 150px;
+}
+
 .footer-left {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .footer-right {
+  float: right;
   text-align: right;
   color: #808080;
 }
@@ -224,16 +236,31 @@ footer {
 .footer-right span, 
 .footer-right .selection,
 .footer-right a {
+  height: 100%;
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .footer-right .selection {
   line-height: 20px;
-  padding-right: 100px;
   border-bottom: 1px solid #808080;
 }
 
 .footer-right .selection::after {
+  padding-left: 80px;
   content: '\25BE';
+}
+
+/* HELP */
+footer .help {
+  position: fixed;
+  bottom: 0;
+  right: 200px;
+  height: 40px;
+  width: 50px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 80%;
+  border-radius: 5px 5px 0 0;
+  padding: 0;
 }
